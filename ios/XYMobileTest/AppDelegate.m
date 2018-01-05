@@ -47,7 +47,7 @@
  */
 - (void)openVCByRN:(NSNotification *)notification{
   XYMineViewController *vc = [[XYMineViewController alloc] init];
-  vc.name = notification.userInfo[@"name"];
+  vc.name = notification.object[@"name"];
   [self.nav pushViewController:vc animated:YES];
 }
 
